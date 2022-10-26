@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/left_hand.glb-54ab35158cb64aaf29610f7be672554e.scn"
+path="res://.import/left_hand.glb-b5bdf7f5aad5a25dbe405f620911c9d9.scn"
 
 [deps]
 
-source_file="res://addons/godot-xr-tools/assets/left_hand.glb"
-dest_files=[ "res://.import/left_hand.glb-54ab35158cb64aaf29610f7be672554e.scn" ]
+source_file="res://addons/godot-xr-tools/assets/hands/left_hand.glb"
+dest_files=[ "res://.import/left_hand.glb-b5bdf7f5aad5a25dbe405f620911c9d9.scn" ]
 
 [params]
 
@@ -31,13 +31,13 @@ external_files/store_in_subdir=false
 animation/import=true
 animation/fps=15
 animation/filter_script=""
-animation/storage=false
+animation/storage=1
 animation/keep_custom_tracks=false
 animation/optimizer/enabled=true
 animation/optimizer/max_linear_error=0.05
 animation/optimizer/max_angular_error=0.01
 animation/optimizer/max_angle=22
-animation/optimizer/remove_unused_tracks=true
+animation/optimizer/remove_unused_tracks=false
 animation/clips/amount=0
 animation/clip_1/name=""
 animation/clip_1/start_frame=0

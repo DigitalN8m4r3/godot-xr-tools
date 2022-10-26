@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://addons/godot-xr-tools/assets/left_hand.glb" type="PackedScene" id=1]
-[ext_resource path="res://addons/godot-xr-tools/assets/hand.gd" type="Script" id=2]
-[ext_resource path="res://addons/godot-xr-tools/assets/hand_blend_tree.tres" type="AnimationNodeBlendTree" id=3]
+[ext_resource path="res://addons/godot-xr-tools/assets/hands/left_hand.glb" type="PackedScene" id=1]
+[ext_resource path="res://addons/godot-xr-tools/player/hands/hand.gd" type="Script" id=2]
+[ext_resource path="res://addons/godot-xr-tools/player/hands/hand_blend_tree.tres" type="AnimationNodeBlendTree" id=3]
 
 [node name="LeftHand" type="Spatial"]
 script = ExtResource( 2 )

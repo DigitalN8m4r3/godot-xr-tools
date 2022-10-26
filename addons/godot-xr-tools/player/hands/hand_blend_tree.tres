@@ -1,0 +1,37 @@
+[gd_resource type="AnimationNodeBlendTree" load_steps=6 format=2]
+
+[sub_resource type="AnimationNodeAnimation" id=1]
+resource_local_to_scene = true
+animation = "Grip Pose"
+
+[sub_resource type="AnimationNodeAnimation" id=4]
+resource_local_to_scene = true
+animation = "Grip Pose"
+
+[sub_resource type="AnimationNodeBlend2" id=5]
+filter_enabled = true
+filters = [ "Armature_Left/Skeleton:middle_distal", "Armature_Left/Skeleton:middle_metacarpal", "Armature_Left/Skeleton:middle_middle", "Armature_Left/Skeleton:middle_proximal", "Armature_Left/Skeleton:pinky_distal", "Armature_Left/Skeleton:pinky_metacarpal", "Armature_Left/Skeleton:pinky_middle", "Armature_Left/Skeleton:pinky_proximal", "Armature_Left/Skeleton:ring_distal", "Armature_Left/Skeleton:ring_metacarpal", "Armature_Left/Skeleton:ring_middle", "Armature_Left/Skeleton:ring_proximal", "Armature_Left/Skeleton:thumb_distal", "Armature_Left/Skeleton:thumb_metacarpal", "Armature_Left/Skeleton:thumb_proximal" ]
+
+[sub_resource type="AnimationNodeAnimation" id=3]
+resource_local_to_scene = true
+animation = "Default pose"
+
+[sub_resource type="AnimationNodeBlend2" id=2]
+filter_enabled = true
+filters = [ "Armature_Left/Skeleton:index_distal", "Armature_Left/Skeleton:index_metacarpal", "Armature_Left/Skeleton:index_middle", "Armature_Left/Skeleton:index_proximal" ]
+
+[resource]
+resource_local_to_scene = true
+graph_offset = Vector2( 0, -60 )
+nodes/ClosedHand1/node = SubResource( 1 )
+nodes/ClosedHand1/position = Vector2( 240, 200 )
+nodes/ClosedHand2/node = SubResource( 4 )
+nodes/ClosedHand2/position = Vector2( 460, 320 )
+nodes/Grip/node = SubResource( 5 )
+nodes/Grip/position = Vector2( 780, 180 )
+nodes/OpenHand/node = SubResource( 3 )
+nodes/OpenHand/position = Vector2( 220, 60 )
+nodes/Trigger/node = SubResource( 2 )
+nodes/Trigger/position = Vector2( 560, 80 )
+nodes/output/position = Vector2( 1020, 80 )
+node_connections = [ "output", 0, "Grip", "Grip", 0, "Trigger", "Grip", 1, "ClosedHand2", "Trigger", 0, "OpenHand", "Trigger", 1, "ClosedHand1" ]
