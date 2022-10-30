@@ -8,7 +8,7 @@
 script = ExtResource( 2 )
 
 [node name="RightHand" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, -1, 0.03, -0.05, 0.15 )
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = ExtResource( 1 )

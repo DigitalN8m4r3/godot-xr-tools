@@ -18,10 +18,6 @@
 [node name="PokeDemo" instance=ExtResource( 1 )]
 
 [node name="LeftHand" parent="ARVROrigin/LeftHand" index="0" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03, -0.05, 0.15 )
-
-[node name="Skeleton" parent="ARVROrigin/LeftHand/LeftHand/LeftHand/Armature_Left" index="0"]
-bones/7/bound_children = [ NodePath("BoneAttachment") ]
 
 [node name="BoneAttachment" type="BoneAttachment" parent="ARVROrigin/LeftHand/LeftHand/LeftHand/Armature_Left/Skeleton" index="1"]
 transform = Transform( 0.927501, -0.373365, 0.0184361, -0.00490146, -0.0614605, -0.998098, 0.373788, 0.925646, -0.0588348, -0.000317366, 0.0346926, 0.155956 )
@@ -31,10 +27,6 @@ bone_name = "index_distal"
 transform = Transform( 1, -1.49012e-07, 9.31323e-09, 1.49012e-07, 1, -7.45058e-09, 5.58794e-09, 1.86265e-08, 1, -0.00103837, 0.0212199, -0.00130188 )
 
 [node name="RightHand" parent="ARVROrigin/RightHand" index="0" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03, -0.05, 0.15 )
-
-[node name="Skeleton" parent="ARVROrigin/RightHand/RightHand/RightHand/Armature_Left" index="0"]
-bones/7/bound_children = [ NodePath("BoneAttachment") ]
 
 [node name="BoneAttachment" type="BoneAttachment" parent="ARVROrigin/RightHand/RightHand/RightHand/Armature_Left/Skeleton" index="1"]
 transform = Transform( 0.927501, -0.373365, 0.0184361, -0.00490146, -0.0614605, -0.998098, 0.373788, 0.925646, -0.0588348, -0.000317366, 0.0346926, 0.155956 )

@@ -33,10 +33,6 @@ script = ExtResource( 23 )
 environment = null
 
 [node name="LeftHand" parent="ARVROrigin/LeftHand" index="0" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03, -0.05, 0.15 )
-
-[node name="Skeleton" parent="ARVROrigin/LeftHand/LeftHand/LeftHand/Armature_Left" index="0"]
-bones/7/bound_children = [ NodePath("BoneAttachment") ]
 
 [node name="BoneAttachment" type="BoneAttachment" parent="ARVROrigin/LeftHand/LeftHand/LeftHand/Armature_Left/Skeleton" index="1"]
 transform = Transform( 0.927501, -0.373365, 0.0184361, -0.00490146, -0.0614605, -0.998098, 0.373788, 0.925646, -0.0588348, -0.000317366, 0.0346926, 0.155956 )
@@ -52,10 +48,6 @@ max_speed = 3.0
 strafe = true
 
 [node name="RightHand" parent="ARVROrigin/RightHand" index="0" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03, -0.05, 0.15 )
-
-[node name="Skeleton" parent="ARVROrigin/RightHand/RightHand/RightHand/Armature_Left" index="0"]
-bones/7/bound_children = [ NodePath("BoneAttachment") ]
 
 [node name="BoneAttachment" type="BoneAttachment" parent="ARVROrigin/RightHand/RightHand/RightHand/Armature_Left/Skeleton" index="1"]
 transform = Transform( 0.927501, -0.373365, 0.0184361, -0.00490146, -0.0614605, -0.998098, 0.373788, 0.925646, -0.0588348, -0.000317366, 0.0346926, 0.155956 )
@@ -129,9 +121,6 @@ title = ExtResource( 25 )
 [node name="SettingsUI" parent="." index="3" instance=ExtResource( 26 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.5 )
 camera = NodePath("../ARVROrigin/ARVRCamera")
-
-[connection signal="child_entered_tree" from="Demos" to="." method="_on_Demos_child_entered_tree"]
-[connection signal="child_exiting_tree" from="Demos" to="." method="_on_Demos_child_exiting_tree"]
 
 [editable path="ARVROrigin/LeftHand/LeftHand"]
 [editable path="ARVROrigin/LeftHand/LeftHand/LeftHand"]
